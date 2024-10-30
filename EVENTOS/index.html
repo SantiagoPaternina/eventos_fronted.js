@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM EVENTOS</title>
+</head>
+<body>
+    <!--FORMA EN LINEA --> 
+    <!--<span onmouseout="volverColor();" onmouseover="cambiarColor();">Pasar raton por aqui</span>-->
+    <!--FORMA FUNCIONAL-->
+    <!-- <h2>Click aqui</h2>
+    <script>
+    //FORMA EN LINEA
+        function cambiarColor(){
+            //let span = document.querySelector("span");
+            let span = event.target;
+            span.style.color = "red";
+        }
+        function volverColor(){
+            let span = document.querySelector("span");
+            span.style.color = "black";
+        }
+    //FORMA FUNCIONAL
+        let h2 = document.querySelector("h2");
+        h2.onclick = function cambiarTexto(){
+            this.textContent  = "doble click aqui";
+            this.style.color = "blue";
+        }
+        h2.ondblclick = function volverTexto(){
+            this.textContent = "Click aqui";
+            this.style.color = "black";
+        }
+
+    </script> -->
+
+    <button>mostrar/ocultar</button>
+    <div style="display: none;">
+        HOLA 
+    </div>
+
+    <script src="eventos.js"></script>
+</body>
+</html>
